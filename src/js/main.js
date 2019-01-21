@@ -40,6 +40,7 @@ function toggleNav() {
 }
 mySlider('.welcome-slider');
 mySlider('.testimonials-slider');
+mySlider('.slider-blog');
 
 // (function () {
 //   if (document.getElementsByClassName("slider-wraper").length !== 0) {

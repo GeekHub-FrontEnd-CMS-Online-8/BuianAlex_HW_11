@@ -6,6 +6,11 @@
   background-size: cover;
   background-image: 
   url('./../img/team-bg.png');
+  .section-header{
+   &:after{
+      text-decoration-color: #3e3d3d;
+    }
+  }  
 }
 .team-members{
   li{

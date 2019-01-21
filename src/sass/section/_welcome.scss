@@ -4,6 +4,7 @@
   background-size: cover;
   background-image: 
   url('./../img/welcome-image.png');
+  overflow: hidden;
   .slide-prev, .slide-next{
     width: 34px;
     height: 34px;
@@ -22,6 +23,9 @@
   }
   &-text{
    @extend  %absolute-center-center;
+   width: 80%;
+   overflow: hidden;
+   padding: 3rem 0;
    text-align: center;
    color: #ffffff;
    p{
@@ -32,17 +36,31 @@
       letter-spacing: 1.4px;
    }
    h1{
+    position: relative;
     font-family: 'Amsdam';
     font-size: 2.25rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2.85px;
-    background-image: url('./../img/Line.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 2rem 1rem ;
-    overflow: hidden;
-    line-height: 3rem;
+    line-height: 4rem;
+    &:after, &:before{
+      position: absolute;
+      line-height: 0;
+      color: transparent;
+      transform: translate(-50%, 0);
+      content: "______________________";
+      text-decoration: underline wavy #ffffff;
+    }
+    &:before{
+      left: 50%;
+      top: -30px; 
+      
+    }
+    &:after{
+      left: 50%;
+      bottom: 20px;
+    }
    }
   }  
   &-btn{

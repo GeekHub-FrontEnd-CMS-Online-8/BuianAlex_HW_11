@@ -1,3 +1,10 @@
+.portfolio{
+  .section-header{
+   &:after{
+      text-decoration-color: #3e3d3d;
+    }
+  } 
+}
 .portfolio-nav{
   display: flex;
   justify-content: center;

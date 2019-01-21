@@ -1,5 +1,10 @@
 .prices{
   background-color: #e3e3e3;
+  .section-header{
+   &:after{
+      text-decoration-color: #3e3d3d;
+    }
+  } 
 }
 .price-list{
   .price-item{

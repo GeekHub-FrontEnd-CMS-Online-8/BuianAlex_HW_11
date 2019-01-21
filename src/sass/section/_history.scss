@@ -1,9 +1,12 @@
 .history{
   padding-bottom: 3rem;
-  .section-header{
-    color: #3e3d3d;
-  }
+  color: #3e3d3d;
   .section-short-text{
     color: #3e3d3d;
   }
+  .section-header{
+    &:after{
+        text-decoration-color: #3e3d3d;
+    }
+  } 
 }

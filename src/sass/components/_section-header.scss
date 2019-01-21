@@ -8,20 +8,16 @@
   text-transform: uppercase;
   letter-spacing: 0.44px;
   line-height: 100px;
-  margin-bottom: 2rem;
-  &::after{
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    content: '';
-    background-image: url('./../img/divider.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }  
+  margin-bottom: 2rem; 
+   &:after{
+      position: absolute;
+      left: 50%;
+      bottom: -1.25rem;
+      transform: translateX(-50%);
+      color: transparent;
+      content: "________________";
+      text-decoration: underline wavy;
+    }
 }
 .section-short-text{
   width: 90%;

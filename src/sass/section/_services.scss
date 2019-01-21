@@ -7,10 +7,10 @@
   color: #ffffff;
   .section-header{
     color: #ffffff;
-     &::after{
-    background-image: url('./../img/divider-white.svg');}
-  }
-
+    &:after{
+        text-decoration-color: #ffffff;
+    }
+  } 
 }
 .service-features{
   li{
