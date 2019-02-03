@@ -1,6 +1,5 @@
 function mySlider(sliderWraper) {
   var wraper = document.querySelector(sliderWraper);
-  console.log(wraper);
   if(wraper){
     
     let slides = wraper.querySelectorAll(".slide").length;

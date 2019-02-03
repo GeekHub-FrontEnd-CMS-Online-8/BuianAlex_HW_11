@@ -12,8 +12,8 @@
         line-height: 12px;
        margin: 0 5px;
         text-align: center;
-        transition-property: background-color, color;
-        transition-duration: .8s;
+        transition-property: background-color, color, border-color;
+        transition-duration: .6s;
         i{padding: 0 5px;
             border-left: 2px solid transparent; 
             border-right: 2px solid transparent;
@@ -32,8 +32,8 @@
         &:hover.btn-fb{
             color: #3B5998;//fb
         }
-        &:hover.btn-gpluse{
-            background-color: #db4a39;//google+
+        &:hover.btn-google{
+            color: #db4a39;//google+
         }
         &:hover.btn-behan{
             color: #053eff; //behance

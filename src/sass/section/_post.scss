@@ -1,0 +1,169 @@
+.post{
+  margin-bottom: 3rem;
+  h3{
+  margin-bottom: 2rem;
+  color: #3e3d3d;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.81px;
+
+  }
+  &-quote{
+    width: 100%;
+    border: 2px solid #a8a8a8;
+    padding: 3.7rem;
+    margin: 3rem 0;
+    color: #3e3d3d;
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 25px;
+    letter-spacing: 1.6px;
+  }
+  &-social{
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid  #b7b7b7;
+    border-bottom: 1px solid  #b7b7b7;
+   
+    text-align: center;
+    i{
+      border: none !important;
+    }
+    a{
+      display: inline-block;
+      width: 31px;
+      height: 31px;
+     
+      border: 1px solid  #b7b7b7;
+      line-height: 27px; 
+      border-radius: 50%;
+      transition-property: color, border-color;
+      &:hover{
+        &.btn-fb{
+          border-color: #3B5998;//fb
+        }
+        &:hover.btn-tw{
+            border-color: #1da1f2;//tw
+        }
+        &:hover.btn-google{
+          color: #db4a39;//google+
+          border-color:#db4a39;//google+
+        }
+        &:hover.btn-behan{
+          border-color: #053eff; //behance
+        }
+
+      }
+    }
+  }
+  &-form{
+    color: #464646;
+    input{
+      &:focus{
+        background-color: #fff;
+      }
+    }
+    textarea{
+      &:focus{
+        background-color: #fff;
+      }
+    }
+  }
+
+  
+}
+.post-body{
+  font-family: 'CrimsonText';
+  p{
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1.4px;
+  }
+}
+
+.comment{
+  margin-bottom: 2rem;
+  padding: 0 0 2rem 100px;
+  position: relative;
+  border-bottom: 1px solid  #b7b7b7;
+  color: #3e3d3d;
+  &-photo{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  &-author{
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.47px;
+  }
+  &-time{
+    font-family: "CrimsonText";
+    font-size: 0.85rem;
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 1rem;
+  }
+  &-text{
+    font-family: "CrimsonText";
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1.4px;
+  }
+  &-reply{
+    color: #3e3d3d;
+    position: absolute;
+    font-family: "CrimsonText";
+    font-size: 0.85rem;
+    font-style: italic;
+    line-height: 18px;
+    right: 0;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  
+}
+.comment.reply-1{
+   padding: 0 0 2rem 150px;
+}
+.comment.reply-1 .comment-photo{
+  left: 50px;
+}
+
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) { 
+  .post{
+    width: 60%;
+    &-form{
+      input{
+      width: 48%;
+    }
+    textarea{
+      width: 100%;
+    }
+    }
+  }
+  .comment.reply-1{
+   padding: 0 0 2rem 200px;
+}
+.comment.reply-1 .comment-photo{
+  left: 100px;
+}
+}
+@media (min-width: 1200px) {
+
+}
