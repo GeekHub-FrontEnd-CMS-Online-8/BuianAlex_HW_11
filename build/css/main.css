@@ -905,7 +905,7 @@ li:hover .overlay {
       margin: 0 1rem 0rem 0; }
     .sidebar-post-text {
       width: 60%; }
-      .sidebar-post-text h1 {
+      .sidebar-post-text h3 {
         height: 30px;
         overflow: hidden;
         font-size: 0.75rem;
@@ -1070,13 +1070,14 @@ body {
     height: 100vh;
     width: 100%; }
   .welcome-text {
+    top: 53%;
     width: 80%;
     overflow: hidden;
     padding: 3rem 0;
     text-align: center;
     color: #ffffff; }
     .welcome-text p {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       font-family: "CrimsonText";
       font-size: .875rem;
       font-weight: 400;
@@ -1089,7 +1090,7 @@ body {
       text-transform: uppercase;
       letter-spacing: 2.85px;
       padding: 2rem 1rem;
-      line-height: 4rem; }
+      line-height: 3rem; }
       .welcome-text h1:after, .welcome-text h1:before {
         position: absolute;
         line-height: 0;
@@ -1108,7 +1109,9 @@ body {
         bottom: 20px; }
   .welcome-btn {
     position: relative;
-    margin-top: 3rem;
+    display: block;
+    width: 170px;
+    margin: 3rem auto 0;
     background-color: transparent;
     border-color: #f2f2f2;
     color: #ffffff; }
@@ -1130,6 +1133,10 @@ body {
               background-size: contain;
       background-repeat: no-repeat; }
 
+@media only screen and (orientation: landscape) {
+  .welcome h1 {
+    font-size: 2rem; } }
+
 .about {
   padding: 4.5rem 0 0;
   background-color: #e3e3e3;
@@ -1147,7 +1154,7 @@ body {
       height: auto; }
     .about-article p {
       text-align: left;
-      padding: 0 4rem 2rem;
+      padding: 0 2rem 2rem;
       font-family: 'CrimsonText';
       font-size: 0.875rem;
       font-weight: 400;
@@ -1527,8 +1534,8 @@ body {
 
 .currency {
   position: absolute;
-  top: 10%;
-  left: 25%;
+  top: -10%;
+  left: -30%;
   color: #3e3d3d;
   font-size: 1.75rem;
   font-weight: 400;
@@ -1843,6 +1850,10 @@ body {
   width: 100%;
   position: relative; }
 
+.map-frame {
+  width: 100%;
+  height: 455px; }
+
 .marker {
   width: 67px;
   height: 67px;
@@ -2124,85 +2135,6 @@ footer {
 .blog-post {
   margin-bottom: 2rem; }
 
-.blog-image {
-  width: 100%;
-  max-height: 373px;
-  margin-bottom: 1rem;
-  overflow: hidden; }
-  .blog-image img {
-    width: 100%;
-    height: auto; }
-
-.blog-title {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1.81px;
-  color: #3e3d3d; }
-  .blog-title:hover {
-    text-decoration: underline; }
-
-.single-post-info {
-  margin-bottom: 1rem;
-  font-family: 'CrimsonText';
-  font-size: 0.8rem;
-  font-style: italic;
-  line-height: 2rem; }
-  .single-post-info a {
-    color: #3e3d3d; }
-    .single-post-info a:hover {
-      text-decoration: underline; }
-
-.social-activities {
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #b7b7b7;
-  border-top: 1px solid #b7b7b7;
-  padding: 0.5rem 0;
-  color: #818181;
-  font-family: 'CrimsonText';
-  font-size: 0.8rem;
-  font-style: italic;
-  line-height: 18px; }
-  .social-activities a {
-    color: #818181; }
-    .social-activities a:hover {
-      color: #3e3d3d;
-      text-decoration: underline; }
-  .social-activities span {
-    margin-right: 5px;
-    padding-left: 1.5rem;
-    position: relative; }
-    .social-activities span::before {
-      top: 50%;
-      position: absolute;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-      content: ' ';
-      background-repeat: no-repeat;
-      background-position: center;
-      -webkit-background-size: contain;
-              background-size: contain; }
-
-.post-comment::before {
-  width: 13px;
-  height: 11px;
-  left: 0;
-  background-image: url("./../img/coments.svg"); }
-
-.post-views::before {
-  width: 19px;
-  height: 12px;
-  left: 0px;
-  background-image: url("./../img/views.svg"); }
-
-.branding::before {
-  width: 19px;
-  height: 12px;
-  left: 0;
-  background-image: url("./../img/branding.svg"); }
-
 .post-text {
   height: 100px;
   margin-bottom: 1rem;
@@ -2423,7 +2355,8 @@ footer {
   float: left; }
   .post-masonry img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin-bottom: 1rem; }
 
 @media (min-width: 768px) {
   .post-masonry {

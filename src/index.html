@@ -67,7 +67,7 @@
             <h1 >
               WE ARE ATLANTIDA
             </h1>
-            <button class="btn welcome-btn">Get Started</button>
+            <a href="#about" class="btn welcome-btn">Get Started</a>
           </div>
         </li>
 
@@ -79,7 +79,7 @@
             <h1>
               WE ARE 
             </h1>
-            <button class="btn welcome-btn">Get Started</button>
+            <a href="#about" class="btn welcome-btn">Get Started</a>
           </div>
         </li>
 
@@ -381,9 +381,9 @@
         <div class="price-icon-wrap">
           <div class="price-icon"><img src="./img/basic-icon.svg" alt=""/></div>
         </div>
-        <p class="price">
+        <span class="price">
           <span class="currency">$</span>10
-        </p>
+        </span>
         <ul class="options-available">
           <li>Full Access</li>
           <li>Unlimited Edition</li>
@@ -400,9 +400,9 @@
         <div class="price-icon-wrap">
           <div class="price-icon"><img src="./img/advenced-icon.svg" alt=""/></div>
         </div>
-        <p class="price">
+        <span class="price">
           <span class="currency">$</span>20
-        </p>
+        </span>
         <ul class="options-available">
           <li>Full Access</li>
           <li>Unlimited Edition</li>
@@ -419,9 +419,9 @@
         <div class="price-icon-wrap">
           <div class="price-icon"><img src="./img/pro-icon.svg" alt=""/></div>
         </div>
-        <p class="price">
+        <span class="price">
           <span class="currency">$</span>30
-        </p>
+        </span>
         <ul class="options-available">
           <li>Full Access</li>
           <li>Unlimited Edition</li>
@@ -466,7 +466,7 @@
               14 Aug 2015 / By Admin
             </p>
             <hr/>
-            <a href="/post.html"><h2>Donec id lobortis tellus Maecenas.</h2></a>
+            <a href="./post.html"><h2>Donec id lobortis tellus Maecenas.</h2></a>
             <p class="strip-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales
               augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
@@ -483,7 +483,7 @@
               14 Aug 2015 / By Admin
             </p>
             <hr />
-            <a href="/post.html">
+            <a href="./post.html">
               <h2>Donec id lobortis tellus Maecenas.</h2>
             </a>
             <p class="strip-text">
@@ -505,7 +505,7 @@
               14 Aug 2015 / By Admin
             </p>
             <hr/>
-            <a href="/post.html">
+            <a href="./post.html">
               <h2>Donec id lobortis tellus Maecenas.</h2>
             </a>
             <p class="strip-text">
@@ -527,7 +527,7 @@
               14 Aug 2015 / By Admin
             </p>
             <hr/>
-            <a href="/post.html">
+            <a href="./post.html">
               <h2>Donec id lobortis tellus Maecenas.</h2>
             </a>
             <p class="strip-text">
@@ -624,48 +624,12 @@
   </div>
 
   <div class='google-map' id="contact">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10379.599102100985!2d32.08480591977539!3d49.4297088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1547498130424"
-      width="100%" height="450"  style="border:0" allowfullscreen></iframe>
+    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10379.599102100985!2d32.08480591977539!3d49.4297088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1547498130424"
+         style="border:0" allowfullscreen></iframe>
       <div class="marker"></div>
   </div>
-  <footer>
-    <div class="conteiner">
-      <div class="footer-left">
-        <img src="./img/Icon-Logo.svg" class="footer-logo" alt="ATLANTIDA"/>
-        <p class="footer-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales
-          augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra.
-        </p>
-        <h1 class="company-name">ATLANTIDA STUDIO</h1>
-        <div class="contacts">
-          <p>Steven Bernson, Attorney at Law</p>
-          <p>1556 Broadway, suite 416</p>
-          <p>New York, NY, 10120, USA</p>
-          <div class="contactc-strong">
-            <p>E-mail: elegantflyers@gmail.com</p>
-            <p>+84 956 654 972</p>
-          </div>
-        </div>
-        <div class="social-footer">
-          <a href="#" class="btn-fb"><i class="fab fa-facebook fa-xs"></i></a>
-          <a href="#" class="btn-tw"><i class="fab fa-twitter fa-xs"></i></a>
-          <a href="#" class="btn-behan"><i class="fab fa-behance fa-xs"></i></a>
-        </div>
-      </div>
-      <form action="#" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Name*" /> <input type="email" name="email" placeholder="E-mail*" />
-        <input type="text" name="telephone" placeholder="Telephone*" /> <input type="email" name="website" placeholder="Website" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit" class='btn btn-submit'>Submit</button>
-      </form>
-      <div class="copyright">
-        <p>Copyright © 2015 Atlantida Theme</p>
-      </div>
-    </div>
-    
-
-  </footer>
+  
+  //= template/footer.html
 
   <script src="js/libs.min.js"></script>
   <script src="js/libs/my-slider.js"></script>
